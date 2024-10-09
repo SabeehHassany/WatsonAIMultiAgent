@@ -1,6 +1,3 @@
-
-# Multi-Agent System with IBM Cloud WatsonAI and CrewAI
-
 This project demonstrates the construction of a multi-agent system using IBM Cloud WatsonAI LLM, the CrewAI framework, and the Serper API. The system is designed to simulate the interaction between AI agents to complete specific tasks, such as conducting research and writing a keynote speech. The agents are customizable and can be adapted to various use cases, making this project a starting point for developing AI-driven workflows that require specialized task delegation.
 
 ## Features
