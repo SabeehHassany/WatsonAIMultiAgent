@@ -1,9 +1,20 @@
-This project demonstrates the construction of a multi-agent system using IBM Cloud WatsonAI LLM, the CrewAI framework, and the Serper API. The system is designed to simulate the interaction between AI agents to complete specific tasks, such as conducting research and writing a keynote speech. The agents are customizable and can be adapted to various use cases, making this project a starting point for developing AI-driven workflows that require specialized task delegation.
+# Multi Agent LLM System using WatsonAI
+
+This project is a simple but powrful demonstration of a multi-agent system using IBM Cloud WatsonAI LLM, the CrewAI framework, and the Serper API. The system is designed to simulate the interaction between AI agents to complete specific tasks, such as conducting research and writing a keynote speech. The agents are customizable and can be adapted to various use cases, making this project a starting point for developing AI-driven workflows that require specialized task delegation.
+
+
+## Table of Contents
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+- [Running the Script](#running-the-script)
+- [Output](#output)
+- [Customization](#customization)
+  - [Example](#example)
 
 ## Features
 - **Multi-Agent Architecture**: Uses multiple AI agents to perform different tasks in sequence.
-  - **Research Agent**: Gathers research data from the web using WatsonAI and Serper API.
-  - **Speech Writer Agent**: Generates engaging keynote speeches based on the research results.
 - **WatsonAI Integration**: Leverages IBM Watsonx LLM for natural language processing and generation.
 - **CrewAI Framework**: Manages the agents, tasks, and overall workflow execution.
 - **Serper API**: Allows agents to search the web for real-time data.
@@ -27,13 +38,7 @@ pip install crewai langchain_ibm serper
 
 ### Setup
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/<your-username>/multi-agent-system-watsonai.git
-   cd multi-agent-system-watsonai
-   ```
-
-2. **Set up API keys**:
+1. **Set up API keys**:
    - You will need your IBM Watsonx AI API key and Serper API key to run the agents.
    - Update the environment variables in `agent.py` or set them directly in your terminal:
      ```bash
@@ -41,7 +46,7 @@ pip install crewai langchain_ibm serper
      export SERPER_API_KEY=<your-serper-api-key>
      ```
 
-3. **Customize agents and tasks**:
+2. **Customize agents and tasks**:
    - Modify the agents’ goals and tasks in `agent.py` to match your specific use case.
    - You can customize the LLM models by changing the model IDs and the roles of agents.
 
@@ -59,17 +64,6 @@ This will initiate the multi-agent system, where the first agent will gather res
 - **Task Outputs**: 
   - The research findings will be saved in `task1output.txt`.
   - The generated keynote speech will be saved in `task2output.txt`.
-
-## Project Structure
-
-```
-multi-agent-system-watsonai/
-│
-├── agent.py              # Main script that runs the multi-agent system
-├── task1output.txt       # Output file for research agent
-├── task2output.txt       # Output file for speech writer agent
-└── README.md             # Project README
-```
 
 ## Customization
 
@@ -100,7 +94,3 @@ task3 = Task(
     agent=summarizer,
 )
 ```
-
-## License
-
-This project is licensed under the MIT License.
