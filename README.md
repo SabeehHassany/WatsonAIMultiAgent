@@ -12,6 +12,7 @@ This project is a simple but powrful demonstration of a multi-agent system using
 - [Output](#output)
 - [Customization](#customization)
   - [Example](#example)
+- [Future Directions](#future-directions)
 
 ## Features
 - **Multi-Agent Architecture**: Uses multiple AI agents to perform different tasks in sequence.
@@ -94,3 +95,9 @@ task3 = Task(
     agent=summarizer,
 )
 ```
+## Future Directions
+
+- Implement agent-to-agent delegation to allow more complex task handoffs between agents.
+- Expand the system by adding agents with new specialized roles, such as data analysts, summarizers, or content editors.
+- Incorporate additional APIs such as GitHub, Google Drive, or custom data sources to create workflow connectivity.
+- Upgrade to newer, more powerful IBM language models for better performance
